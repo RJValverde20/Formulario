@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Formulario</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary btn-block" onclick="showMenu()">Menú de Opciones</button>
+                <div id="menu" class="hidden mt-3">
+                    <button class="btn btn-secondary btn-block" onclick="showForm('Agregar')">Agregar</button>
+                    <button class="btn btn-secondary btn-block" onclick="showForm('Modificar')">Modificar</button>
+                    <button class="btn btn-secondary btn-block" onclick="showForm('Buscar')">Buscar</button>
+                    <button class="btn btn-secondary btn-block" onclick="showForm('Borrar')">Borrar</button>
+                    <button class="btn btn-secondary btn-block" onclick="showReport()">Reporte de Encuesta</button>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div id="formContainer" class="hidden">
+                    <form>
+                        <div class="form-group">
+                            <label for="nombreCompleto">Nombre Completo:</label>
+                            <input type="text" class="form-control" id="nombreCompleto" name="nombreCompleto" required>
+                        </div>
+                        <!-- Agrega otros campos del formulario aquí -->
+                        <div class="form-group">
+                            <label>Sexo:</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="sexoMasculino" name="sexo" value="Masculino" required>
+                                <label class="form-check-label" for="sexoMasculino">Masculino</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="sexoFemenino" name="sexo" value="Femenino" required>
+                                <label class="form-check-label" for="sexoFemenino">Femenino</label>
+                            </div>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                            <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="cedula">Cédula:</label>
+                            <input type="text" class="form-control" id="cedula" name="cedula" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" class="form-control" id="direccion" name="direccion">
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{8}" title="El teléfono debe contener 8 dígitos numéricos">
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="correoElectronico">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="correoElectronico" name="correoElectronico" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="areaTrabajo">En qué área le gustaría trabajar:</label>
+                            <select class="form-control" id="areaTrabajo" name="areaTrabajo" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="Estatal">Estatal</option>
+                                <option value="Privada">Privada</option>
+                                <option value="Negocio Propio">Negocio Propio</option>
+                            </select>
+                        </div>
+            
+                    </form>
+                </div>
+                <div id="reportContainer" class="hidden">
+                    <div class="form-group">
+                        <label for="comentarios">Palabras de aliento:</label>
+                        <textarea class="form-control" id="comentarios" name="comentarios" rows="5" required></textarea>
+                         </div>
+                       </form>
+                     </div>
+    
+                     <div class="container">
+                            <div class="form-group">
+                                <label for="agradecimiento">Agradecimiento a Profesores:</label>
+                                <textarea class="form-control" id="agradecimiento" name="agradecimiento" rows="5" required></textarea>
+                            </div>
+                
+                        </form>
+                    </div>
+                    <div class="container">
+                    <br><div class="form-group">
+                        <label for="preferenciasViaje">Lugares que le gustaría visitar:</label>
+                        <textarea class="form-control" id="preferenciasViaje" name="preferenciasViaje" rows="5" required></textarea>
+                    </div>
+                   
+                    <div class="container">
+                        <br><div class="form-group">
+                            <label for="observaciones">Observaciones:</label>
+                            <textarea class="form-control" id="observaciones" name="observaciones" rows="5" required></textarea>
+                        </div>
+                       </form>
+                      </div>
+                  </form>
+               </div>
+            </form>
+        </div>
+
+    <!-- Enlace a los archivos JS de Bootstrap (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    
+</body>
+</html>

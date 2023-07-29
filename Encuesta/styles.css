@@ -1,0 +1,47 @@
+/* Estilo para el formulario */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+/* Estilo para los botones del menú */
+#menu button {
+  margin-bottom: 5px;
+}
+
+/* Estilo para el contenedor del menú */
+#menu {
+  display: none;
+}
+
+/* Estilo para mostrar el menú */
+.show-menu #menu {
+  display: block;
+}
+
+/* Estilo para los campos de entrada */
+.form-control {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Estilo para los botones del formulario */
+button.btn-primary {
+  margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor del formulario y el reporte */
+#formContainer, #reportContainer {
+  margin-top: 20px;
+  display: none;
+}
+
+/* Estilo para mostrar el formulario o el reporte según sea necesario */
+.show-form #formContainer, .show-report #reportContainer {
+  display: block;
+}
+ 
